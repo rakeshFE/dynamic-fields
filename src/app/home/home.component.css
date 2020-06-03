@@ -1,0 +1,28 @@
+aside {    
+    border-right: 1px solid #6095C9;
+    width: 15vw;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background: #F1EFF9;
+    border: 1px solid #6095C9;
+    padding:5px;
+}
+
+#logo {
+    text-transform: capitalize;
+    text-align:center;
+    font-family: 'Damion', sans-serif;
+    font-size:40px;
+    color:#554553
+}
+
+main{
+    color:rgba(0, 0, 0, 0.54);
+}

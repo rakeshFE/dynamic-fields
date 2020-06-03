@@ -1,0 +1,13 @@
+.dynamic-form {
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #6095C9;
+
+}
+
+.dynamic-form input {
+    background: #F1EFF9;
+    border: 1px solid #6095C9;
+    width: 50% !important;
+    line-height: 20px;
+}

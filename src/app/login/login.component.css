@@ -1,0 +1,9 @@
+.login-form {
+    width: 500px;
+    margin: 0 auto;
+    height: 50vh;
+    padding: 10px;
+    border: 1px solid #6095C9;
+    border-radius:5px;
+    box-shadow: 0 8px 6px -6px black;
+}

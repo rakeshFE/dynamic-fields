@@ -1,0 +1,9 @@
+<form class="login-form" [formGroup]="loginForm">
+    <div class="container">
+        <label for="username" class="u-marginHorizontalSmall "><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" formControlName="username"  class="width100 u-marginHorizontalSmall">
+        <label for="psw"  class="u-marginHorizontalSmall"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" formControlName="password"  class="width100 u-marginHorizontalSmall">
+        <button type="submit" class="login-button" (click)="onSubmit()">Login</button>
+    </div>
+</form>

@@ -1,0 +1,17 @@
+<div>
+    <form [formGroup]="form">
+        <div class="row">
+            <div *ngFor="let question of questions" class="form-row column">
+                <app-question [question]="question" [form]="form"></app-question>
+            </div>
+        </div>
+        <div class="u-flex">
+            <button type="submit" (click)="onSubmit($event)" [disabled]="!form.valid">Save</button>
+            <button type="submit" (click)="reset($event)" [disabled]="!form.valid">Reset</button>
+        </div>
+    </form>
+
+    <div *ngIf="payLoad" class="u-flex">
+        <strong>Saved the following values</strong><br>{{payLoad}}
+    </div>
+</div>

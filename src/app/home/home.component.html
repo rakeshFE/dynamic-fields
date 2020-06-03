@@ -1,0 +1,21 @@
+<header>
+    <div id="logo">ABC Limited</div>
+    <div id="button-holder">
+        <button class="logout-button" (click)="logout()">Log Out</button>
+    </div>
+</header>
+
+<div class="u-flex">
+    <aside>
+        <p *ngFor="let randomItem of randomItems; index as i">
+            <a href="#" (click)="goToDynamicForms($event, i+1)">Item {{i+1}}</a>
+        </p>
+    </aside>
+    <main class="u-flexGrow1 u-paddingSmall">
+
+        <p *ngIf="!selectedId">Welcome to test application.You can click on the link in left side bar.</p>
+        <ng-container *ngIf="selectedId">
+            <app-dynamic-forms [selectedId]="selectedId"></app-dynamic-forms>
+        </ng-container>
+    </main>
+</div>

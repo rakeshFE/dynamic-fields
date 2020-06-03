@@ -1,0 +1,13 @@
+
+.md-dialog{
+    z-index: 100;
+    position: absolute;
+    width: 440px;
+    height: 300px;
+    border: 1px solid #6095C9;   
+    top: 7vh;
+    left:40vw;
+    background: #fff;
+    margin: 0 auto;
+    padding:10px;
+}
