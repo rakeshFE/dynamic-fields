@@ -30,5 +30,6 @@ export class DynamicFormComponent implements OnInit {
         event.preventDefault();
         this.form.markAsPristine();
         this.form.markAsUntouched();
+        this.payLoad='';
     }
 }

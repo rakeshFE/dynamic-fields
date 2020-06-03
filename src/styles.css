@@ -98,7 +98,7 @@ aside {
 
 .column {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
 
 }
 
@@ -107,4 +107,12 @@ aside {
     height: 100px;
     border: 1px solid black;
     margin: .25em;
-  }
+}
+
+.width70 {
+    max-width: 800px;
+}
+
+.u-scroll {
+    overflow: scroll;
+}
