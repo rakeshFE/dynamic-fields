@@ -9,7 +9,7 @@ import { ControlBase } from '../commons/interfaces';
     templateUrl: './dynamic-form.component.html',
     providers: [ControlCreationService]
 })
-export class DynamicFormComponent implements OnInit {
+export class DynamicFormComponent {
 
     @Input() questions: ControlBase<string>[] = [];
     form: FormGroup;
@@ -17,12 +17,14 @@ export class DynamicFormComponent implements OnInit {
 
     constructor(private qcs: ControlCreationService) { }
 
-    ngOnInit() {
+    ngOnChanges() {
+        this.payLoad = '';
         this.form = this.qcs.toFormGroup(this.questions);
     }
 
     onSubmit(event) {
         event.preventDefault();
+        this.payLoad = '';
         this.payLoad = JSON.stringify(this.form.value);
     }
 
@@ -30,6 +32,6 @@ export class DynamicFormComponent implements OnInit {
         event.preventDefault();
         this.form.markAsPristine();
         this.form.markAsUntouched();
-        this.payLoad='';
+        this.payLoad = '';
     }
 }
